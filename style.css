@@ -2160,6 +2160,7 @@ main > section {
         text-align: left;
         border-bottom: 2px solid transparent;
         padding: 10px 0;
+        color: var(--dark-charcoal) !important; /* Force la couleur sombre sur fond blanc */
     }
 
     .main-nav a.active {
