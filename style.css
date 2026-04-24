@@ -162,11 +162,19 @@ body {
     }
     .hero-card {
         width: 95%;
-        padding: 25px;
-        bottom: -150px;
+        padding: 20px;
+        bottom: -120px;
+        border-radius: 40px;
+    }
+    .hero-card p {
+        font-size: 13px;
+    }
+    .btn-primary {
+        padding: 10px 30px;
+        font-size: 20px;
     }
     .hero {
-        padding-bottom: 180px;
+        padding-bottom: 140px;
     }
 }
 
@@ -2105,30 +2113,47 @@ main > section {
 
     .main-nav {
         position: fixed;
-        top: 70px;
+        top: 0;
         left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
+        width: 85%;
+        height: 100vh;
         background: var(--white);
-        transition: 0.3s;
-        z-index: 999;
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 2001;
+        box-shadow: 10px 0 30px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .main-nav.active {
         left: 0;
     }
 
+    .menu-toggle {
+        z-index: 2002;
+    }
+
     .main-nav ul {
         flex-direction: column;
-        padding: 40px 20px;
-        gap: 20px;
-        align-items: center;
+        padding: 40px;
+        gap: 25px;
+        align-items: flex-start;
     }
 
     .main-nav a {
-        font-size: 18px;
-        width: 100%;
-        text-align: center;
+        font-size: 22px;
+        width: auto;
+        text-align: left;
+        border-bottom: 2px solid transparent;
+        padding: 10px 0;
+    }
+
+    .main-nav a.active {
+        background: transparent;
+        color: var(--primary-red);
+        border-bottom-color: var(--primary-red);
+        border-radius: 0;
     }
 
     /* Hero */
@@ -2478,8 +2503,8 @@ body.dark-theme-kiosque .kiosque-hub::before {
 /* Multimedia Page Premium Styles */
 .video-grid-premium {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .video-card-premium {
@@ -2551,13 +2576,24 @@ body.dark-theme-kiosque .kiosque-hub::before {
 
 .audio-track-premium {
     background: #1a1a1a;
-    padding: 20px 30px;
+    padding: 15px 20px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #333;
     transition: all 0.3s ease;
+    gap: 15px;
+}
+
+@media (max-width: 500px) {
+    .audio-track-premium {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .track-player {
+        align-self: flex-end;
+    }
 }
 
 .audio-track-premium:hover {
