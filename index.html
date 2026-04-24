@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scouts de Thiès</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="assets/images/logo scout.jpeg" alt="Scouts de Thiès">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#activites">Nos Activités</a></li>
+                    <li><a href="#equipe">Notre Équipe</a></li>
+                    <li><a href="#historique">Historique</a></li>
+                    <li><a href="#memoire">Espace mémoire</a></li>
+                    <li><a href="multimedia.html">Banque Multimédia</a></li>
+                    <li><a href="kiosque.html">Magazines</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="accueil" class="hero">
+            <div class="container hero-container">
+                <div class="hero-wrapper">
+                    <img src="assets/images/garde.jpeg" alt="Scouts Hero" class="hero-image">
+                    
+                    <div class="hero-card">
+                        <p>Nous sommes un mouvement d'éducation, de fraternité et d'engagement citoyen, les Scouts de Thiès
+                            forment une jeunesse active, responsable et solidaire. À travers des activités éducatives,
+                            culturelles, sportives et sociales, nous cultivons les valeurs du respect, du service et du
+                            leadership. Agir pour sa communauté, grandir avec les autres, vivre pleinement ses convictions.
+                            Rejoignez les Scouts de Thiès et devenez acteur du changement !</p>
+                        <p class="hero-subtext">Vous souhaitez nous rejoindre ?</p>
+                        <a href="#inscription" class="btn-primary">Nous Rejoindre</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actualités -->
+        <section id="actualites" class="actualites">
+            <div class="container">
+                <div class="section-badge red-pill center">ACTUALITES</div>
+                <div class="social-embed-grid">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OUIOeBSR1ws" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="social-embed-container">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid037Z1yk7E3H5BxnjDYSLuAptBQiyjMtBpX7qpJNqQS5wzhDbu95WaNjGESfUaK2yLpl%26id%3D100072017536066&show_text=true&width=500" width="500" height="703" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domaines d'Intervention -->
+        <section id="domaines" class="domaines">
+            <div class="container">
+                <div class="section-badge red-pill center">NOS DOMAINES D'INTERVENTIONS</div>
+                <div class="domaines-layout">
+                    <div class="domaines-grid">
+                        <div class="domaine-item large">
+                            <img src="assets/images/intervention/vie_scout.jpeg" alt="Vie scoute">
+                            <div class="domaine-description">
+                                À travers les camps, les formations scoutes, les veillées et les jeux éducatifs, nous transmettons des valeurs de fraternité, de discipline et d’autonomie.
+                            </div>
+                            <div class="domaine-label">Vie scoute et formation des jeunes</div>
+                        </div>
+                        <div class="domaine-item">
+                            <img src="assets/images/intervention/education_a_la_citoyennete.jpeg" alt="Éducation à la citoyenneté">
+                            <div class="domaine-description">
+                                Nous formons des jeunes responsables, engagés et conscients de leur rôle dans la société à travers des activités éducatives, des formations et des campagnes de sensibilisation.
+                            </div>
+                            <div class="domaine-label">Éducation à la citoyenneté</div>
+                        </div>
+                        <div class="domaine-item">
+                            <img src="assets/images/intervention/protection_de_envoronnement.jpeg" alt="Environnement">
+                            <div class="domaine-description">
+                                Reboisements, nettoyages de quartiers, sensibilisation à l’écologie : les Scouts de Thiès sont au cœur de l’action pour un environnement sain et durable.
+                            </div>
+                            <div class="domaine-label">Protection de l’environnement</div>
+                        </div>
+                        <div class="domaine-item">
+                            <img src="assets/images/intervention/action_sociale.jpeg" alt="Action sociale">
+                            <div class="domaine-description">
+                                Nous intervenons auprès des populations vulnérables : visites dans les centres sociaux, collectes de dons, soutien scolaire, actions humanitaires…
+                            </div>
+                            <div class="domaine-label">Action sociale et solidarité</div>
+                        </div>
+                        <div class="domaine-item">
+                            <img src="assets/images/intervention/communication_et_media.jpeg" alt="Communication">
+                            <div class="domaine-description">
+                                Nos jeunes sont formés aux outils numériques, aux réseaux sociaux et à la création de contenu pour mieux communiquer et valoriser leurs actions.
+                            </div>
+                            <div class="domaine-label">Communication et médias</div>
+                        </div>
+                        <div class="domaine-item">
+                            <img src="assets/images/intervention/cooperation-reiggionale.jpeg" alt="Coopération">
+                            <div class="domaine-description">
+                                Nous participons à des rencontres régionales, nationales et internationales, favorisant l’ouverture, la paix et la coopération entre scouts du monde entier.
+                            </div>
+                            <div class="domaine-label">Coopération régionale et internationale</div>
+                        </div>
+                        <div class="domaine-item">
+                            <img src="assets/images/intervention/sport_culture_loisirs.jpeg" alt="Sport, Culture et Loisirs">
+                            <div class="domaine-description">
+                                Les Scouts de Thiès promeuvent une jeunesse équilibrée grâce à des activités sportives, des événements culturels, du théâtre, de la musique et des compétitions intergroupes.
+                            </div>
+                            <div class="domaine-label">Sport, Culture et Loisirs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nos Activités -->
+        <section id="activites" class="activites">
+            <div class="container">
+                <div class="section-badge red-pill center">NOS ACTIVITES</div>
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <img src="assets/images/activities/kaayfo.jpeg" alt="KAAY FO">
+                        <div class="activity-description">
+                            Le Kaay Fo est une activité emblématique de la branche jaune qui rassemble les plus jeunes autour de jeux, d’activités d’éveil et d’apprentissage dans un cadre ludique et fraternel.
+                        </div>
+                        <div class="activity-label">KAAY FO</div>
+                    </div>
+                    <div class="activity-card">
+                        <img src="assets/images/activities/rallye_regional.jpeg" alt="RALLYE REGIONAL">
+                        <div class="activity-description">
+                            Organisé par la branche verte, ce rallye rassemble les troupes autour de défis, de jeux d’équipe et d’ateliers citoyens afin de renforcer l’esprit d’équipe, le sens des responsabilités et l’engagement scout.
+                        </div>
+                        <div class="activity-label">RALLYE REGIONAL</div>
+                    </div>
+                    <div class="activity-card">
+                        <img src="assets/images/activities/camp_communaute.jpeg" alt="CAMP DE COMMUNAUTE">
+                        <div class="activity-description">
+                            Le camp de communauté est une activité de la branche rouge, rassemblant les aînés autour d’une expérience unique, exigeante et profondément formatrice. Plus qu’un simple camp, c’est un temps fort d’engagement, de service et de réflexion, où chaque jeune est appelé à devenir un acteur de changement dans sa communauté.
+                        </div>
+                        <div class="activity-label">CAMP DE COMMUNAUTE</div>
+                    </div>
+                    <div class="activity-card">
+                        <img src="assets/images/activities/scoutup.jpeg" alt="SCOUT'UP DIGITAL">
+                        <div class="activity-description">
+                            Scout’Up digital : Un programme de formation en communication digitale destiné à former les community managers des groupes scouts, développer leurs compétences numériques et valoriser leurs actions en ligne.
+                        </div>
+                        <div class="activity-label">SCOUT'UP DIGITAL</div>
+                    </div>
+                    <div class="activity-card">
+                        <img src="assets/images/activities/camp_ci_cep.jpeg" alt="CAMP CI CEP">
+                        <div class="activity-description">
+                            CAMP CI CEP: Une formation stratégique mise en place par les ressources adultes pour renforcer les capacités des cadres et futurs chefs d’unité, dans une logique de transmission et d’excellence
+                        </div>
+                        <div class="activity-label">CAMP CI CEP</div>
+                    </div>
+                    <div class="activity-card">
+                        <img src="assets/images/activities/patronage_des_enfants.jpeg" alt="PATRONAGE">
+                        <div class="activity-description">
+                            Le patronage des enfants est un espace éducatif, ludique et fraternel organisé par les Scouts de Thiès. Il offre aux jeunes un cadre sécurisé pour apprendre, jouer et développer leurs talents à travers des activités culturelles, sportives et spirituelles.
+                        </div>
+                        <div class="activity-label">Le patronage des enfants </div>
+                    </div>
+                    <div class="activity-card">
+                        <img src="assets/images/activities/camp_de_service.jpeg" alt="CAMP SERVICE">
+                        <div class="activity-description">
+                            Camp service: Chaque année, les Scouts de Thiès accompagnent et assistent les malades lors de leur pèlerinage. C’est un moment de solidarité et de dévouement, où les jeunes s’engagent à servir avec bienveillance et compassion
+                        </div>
+                        <div class="activity-label">CAMP SERVICE</div>
+                    </div>
+                    <div class="activity-card">
+                        <img src="assets/images/activities/forum_regional.jpeg" alt="FORUM REGIONAL">
+                        <div class="activity-description">
+                            Les forum régional: rassemble les scouts et responsables de la région pour échanger, partager des expériences et définir ensemble les grandes orientations du mouvement. C’est un cadre de réflexion, de formation et de prise de décision collective.
+                        </div>
+                        <div class="activity-label">FORUM REGIONAL</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notre Équipe -->
+        <section id="equipe" class="equipe">
+            <div class="container">
+                <div class="section-badge red-pill center">NOTRE EQUIPE</div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <img src="assets/images/team/serge_olivier.png" alt="Serge Olivier DIATTA">
+                        </div>
+                        <div class="team-info">
+                            <h4>Serge Olivier DIATTA</h4>
+                            <p>COMMISSAIRE RÉGIONAL</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <img src="assets/images/team/frederic_tine.png" alt="Frédéric TINE">
+                        </div>
+                        <div class="team-info">
+                            <h4>Frédéric TINE</h4>
+                            <p>COMMISSAIRE DE DISTRICT</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <img src="assets/images/team/matthieu_faye.png" alt="Matthieu FAYE">
+                        </div>
+                        <div class="team-info">
+                            <h4>Matthieu FAYE</h4>
+                            <p>PRÉSIDENT FORUM DES JEUNES</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <img src="assets/images/team/pascal_mbaye.png" alt="Pascal MBAYE">
+                        </div>
+                        <div class="team-info">
+                            <h4>Pascal MBAYE</h4>
+                            <p>CHEF DE GROUPE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historique -->
+        <section id="historique" class="historique">
+            <div class="container">
+                <div class="section-badge red-pill center">HISTORIQUE</div>
+                <div class="histo-card">
+                    <h3>Naissance et enracinement du mouvement</h3>
+                    <p>Le scoutisme est officiellement implanté dans la région de Thiès en 1967. Cette initiative marque
+                        le point de départ d'un mouvement structuré, ayant pour ambition d'éduquer les jeunes à travers
+                        les valeurs universelles du scoutisme : service, engagement citoyen et développement personnel.
+                    </p>
+                    <p>Dès ses débuts, le mouvement s'est appuyé sur l'énergie de ses pionniers pour mettre en place des
+                        activités éducatives et sociales, au service de la jeunesse et des communautés locales. Au fil
+                        des décennies, la région est devenue un pôle scout dynamique, reconnu pour son esprit
+                        d'innovation et sa fidélité aux idéaux du mouvement.</p>
+
+                    <h3 style="margin-top: 30px;">Organisation territoriale</h3>
+                    <p>Afin d'assurer une meilleure proximité avec les groupes et de renforcer l'encadrement, la Région
+                        de Thiès a été organisée en quatre grands districts :</p>
+
+                    <p class="accent-orange">District de Baol</p>
+                    <p style="text-align: center;">Ndondol - Bambey - Ngohé - Diourbel - Ngascope - Farare - Mbacké</p>
+
+                    <p class="accent-orange">District Daniel Brottier</p>
+                    <p style="text-align: center;">Sainte Anne - Pognéne - Lalane - Koudiadié - Léhar - Mont-rolland -
+                        Mboro</p>
+
+                    <p class="accent-orange">District Jappo</p>
+                    <p style="text-align: center;">Maire Reine - Jésus Bon Pasteur - Saint Jean Baptise - Peycouck</p>
+
+                    <p class="accent-orange">District Diobass</p>
+                    <p style="text-align: center;">Fandéne - Pout - Sanghé - Baback</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Espaces Mémoires -->
+        <section id="memoire" class="memoire">
+            <div class="container">
+                <div class="section-badge red-pill center">ESPACE MÉMOIRE</div>
+                <div class="memoire-grid">
+                    <div class="memoire-item">
+                        <div class="img-wrapper">
+                            <img src="assets/images/memory/memory1.jpg" alt="ANDRE BERNARD FAYE">
+                        </div>
+                        <div class="memoire-label">ANDRE BERNARD FAYE</div>
+                    </div>
+                    <div class="memoire-item">
+                        <div class="img-wrapper">
+                            <img src="assets/images/memory/memory2.jpg" alt="SIMON E. D. DASYLVA">
+                        </div>
+                        <div class="memoire-label">SIMON E. D. DASYLVA</div>
+                    </div>
+                    <div class="memoire-item">
+                        <div class="img-wrapper">
+                            <img src="assets/images/memory/memory1.jpg" alt="AMBROISE MBENGUE" style="filter: hue-rotate(45deg);">
+                        </div>
+                        <div class="memoire-label">AMBROISE MBENGUE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inscription -->
+        <section id="inscription" class="inscription">
+            <div class="container">
+                <div class="section-badge red-pill center">INSCRIPTION</div>
+                <div class="form-container">
+                    <h3>FORMULAIRE D'INSCRIPTION</h3>
+                    <form id="regForm">
+                        <div class="form-group">
+                            <label>Prénom et Nom :</label>
+                            <input type="text" name="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Date et Lieu de naissance :</label>
+                            <input type="text" name="birth" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Fonction :</label>
+                            <input type="text" name="fonction" required>
+                        </div>
+                        <div class="form-group">
+                            <label>District :</label>
+                            <input type="text" name="district" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Groupe :</label>
+                            <input type="text" name="groupe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Problème Médicaux :</label>
+                            <input type="text" name="medical">
+                        </div>
+                        <button type="submit" class="btn-submit">VALIDER</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projet et Partenariat -->
+        <section id="projet" class="projet">
+            <div class="container">
+                <div class="section-badge red-pill center">PROJET ET PARTENARIAT</div>
+                <div class="projets-grid">
+                    <div class="projet-card">
+                        <img src="assets/images/projects/project1.jpg" alt="Ferme Scoute"
+                            style="width: 100%; height: 250px; object-fit: cover;">
+                        <div class="projet-label">FERME SCOUTE</div>
+                    </div>
+                    <div class="projet-card">
+                        <img src="assets/images/projects/project2.jpg" alt="Formation Pro"
+                            style="width: 100%; height: 250px; object-fit: cover;">
+                        <div class="projet-label">FORMATION PROFESSIONNELLE</div>
+                    </div>
+                    <div class="projet-card">
+                        <img src="assets/images/projects/project3.jpg" alt="Outils"
+                            style="width: 100%; height: 250px; object-fit: cover;">
+                        <div class="projet-label">DISTRIBUTION D'OUTILS</div>
+                    </div>
+                    <div class="projet-card">
+                        <img src="assets/images/projects/project4.jpg" alt="Uniformisation"
+                            style="width: 100%; height: 250px; object-fit: cover;">
+                        <div class="projet-label">UNIFORMISATION</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-links">
+            <div class="container container-social">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/185ts5dD3B/?mibextid=wwXIfr" class="social-icon"
+                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/scouts_de_thies?igsh=Nzdqa200aG5sbWQ3" class="social-icon"
+                        target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com/@scoutsdelaregiondethies2996?si=w7ya6g97YxA0CdEh" class="social-icon"
+                        target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@scoutsdethies?_r=1&_t=ZS-94dk178u3KE" class="social-icon"
+                        target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://x.com/scoutthies?s=21" class="social-icon" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <h2 class="social-title">NOS RESEAUX SOCIAUX</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <img src="assets/images/logo scout.jpeg" alt="Scouts de Thiès" class="footer-logo">
+                <p>Mouvement d'éducation et de citoyenneté, formant les jeunes de Thiès aux valeurs du scoutisme depuis 1967.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                    <li><a href="#equipe">Notre Équipe</a></li>
+                    <li><a href="kiosque.html">Magazines</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Thiès, Sénégal</li>
+                    <li><i class="fa-solid fa-phone"></i> +221 77 268 23 34</li>
+                    <li><i class="fa-solid fa-envelope"></i> comscouthies@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Scouts de Thiès. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

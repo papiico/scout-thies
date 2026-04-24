@@ -1,0 +1,16 @@
+# Fichiers trop gros pour GitHub
+assets/video/reportage_femmes.mp4
+
+# Fichiers de données locales
+test_emails.txt
+setup_db.php
+db.php
+.vscode/
+
+# Fichiers temporaires
+*.crdownload
+*.tmp
+
+# Dossiers OS
+Thumbs.db
+.DS_Store

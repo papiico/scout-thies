@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosque JUMBO - Scouts de Thiès</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme-kiosque">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo scout.jpeg" alt="Scouts de Thiès"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#accueil">Accueil</a></li>
+                    <li><a href="index.html#activites">Nos Activités</a></li>
+                    <li><a href="index.html#equipe">Notre Équipe</a></li>
+                    <li><a href="index.html#historique">Historique</a></li>
+                    <li><a href="index.html#memoire">Espace mémoire</a></li>
+                    <li><a href="multimedia.html">Banque Multimédia</a></li>
+                    <li><a href="kiosque.html" class="active">Magazines</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <!-- Kiosque Hero -->
+        <section class="kiosque-hero">
+            <div class="kiosque-hero-overlay"></div>
+            <div class="container kiosque-hero-content">
+                <div class="kiosque-hero-text">
+                    <div class="section-badge red-pill">KIOSQUE RÉGIONAL</div>
+                    <h1>Le Magazine JUMBO</h1>
+                    <p>Retrouvez toutes les éditions de la voix des scouts de Thiès et téléchargez les PDF originaux.
+                    </p>
+                </div>
+                <div class="kiosque-hero-mockup">
+                    <img src="assets/images/photo_jumbo.jpeg" alt="JUMBO Magazine" class="jumbo-book-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Kiosque Hub -->
+        <section class="kiosque-hub container">
+            <!-- Filtres -->
+            <div class="kiosque-filters">
+                <button class="filter-btn active" data-filter="all">Tout voir</button>
+                <div class="filter-group">
+                    <span>Par Date :</span>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2025">2025</button>
+                    <button class="filter-btn" data-filter="2026">2026</button>
+                </div>
+                <div class="filter-group">
+                    <span>Par Thème :</span>
+                    <button class="filter-btn" data-filter="lancement">Lancement</button>
+                    <button class="filter-btn" data-filter="camps">Camps</button>
+                    <button class="filter-btn" data-filter="formation">Formation</button>
+                </div>
+            </div>
+
+            <!-- Grille des éditions -->
+            <div class="kiosque-grid" id="kiosque-grid">
+
+                <!-- Edition 1 -->
+                <article class="kiosque-card" data-category="2024 lancement num1">
+                    <div class="kiosque-cover-wrapper">
+                        <img src="assets/images/photo_jumbo.jpeg" alt="Couverture JUMBO Numéro 1" class="kiosque-cover">
+                        <div class="kiosque-badges">
+                            <span class="badge-year">2024</span>
+                            <span class="badge-num">N° 1</span>
+                        </div>
+                    </div>
+                    <div class="kiosque-info">
+                        <h3>JUMBO Numéro 1</h3>
+                        <p class="kiosque-theme">Thème : Lancement & Héritage</p>
+                        <p class="kiosque-desc">Découvrez l'historique, les figures emblématiques et l'édito du
+                            Commissaire Régional.</p>
+                        <div class="kiosque-actions">
+                            <a href="assets/magazine/jumbo.pdf" target="_blank" class="btn-primary btn-small"><i
+                                    class="fa-solid fa-file-pdf"></i> Voir le PDF</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="kiosque-card" data-category="2025 camps num2">
+                    <div class="kiosque-cover-wrapper">
+                        <img src="assets/images/logo scout.jpeg" alt="Couverture Magazine 2"
+                            class="kiosque-cover placeholder-cover">
+                        <div class="kiosque-badges">
+                            <span class="badge-year">2025</span>
+                            <span class="badge-num">N° 2</span>
+                        </div>
+                    </div>
+                    <div class="kiosque-info">
+                        <h3>Magazine Scout</h3>
+                        <p class="kiosque-theme">Thème : Camps d'été</p>
+                        <p class="kiosque-desc">Édition spéciale retraçant tous les grands rassemblements de l'année.
+                        </p>
+                        <div class="kiosque-actions">
+                            <a href="Magazine%202.pdf" target="_blank" class="btn-primary btn-small"><i
+                                    class="fa-solid fa-file-pdf"></i> Voir le PDF</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Exemple fictif 3 -->
+                <article class="kiosque-card" data-category="2026 formation num3">
+                    <div class="kiosque-cover-wrapper">
+                        <div class="kiosque-cover placeholder-cover"
+                            style="display:flex;align-items:center;justify-content:center;background:#e0e0e0;height:300px;color:#888;">
+                            <i class="fa-solid fa-image fa-3x"></i>
+                        </div>
+                        <div class="kiosque-badges">
+                            <span class="badge-year">2026</span>
+                            <span class="badge-num">N° 3</span>
+                        </div>
+                    </div>
+                    <div class="kiosque-info">
+                        <h3>JUMBO Formation</h3>
+                        <p class="kiosque-theme">Thème : Formation</p>
+                        <p class="kiosque-desc">Dossier spécial sur la formation des chefs et la transmission des
+                            valeurs.</p>
+                        <div class="kiosque-actions">
+                            <a href="#" class="btn-primary btn-small disabled"><i class="fa-solid fa-globe"></i>
+                                Bientôt</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <img src="assets/images/logo scout.jpeg" alt="Scouts de Thiès" class="footer-logo">
+                <p>Mouvement d'éducation et de citoyenneté, formant les jeunes de Thiès aux valeurs du scoutisme depuis
+                    1967.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html#accueil">Accueil</a></li>
+                    <li><a href="index.html#activites">Activités</a></li>
+                    <li><a href="index.html#equipe">Notre Équipe</a></li>
+                    <li><a href="kiosque.html" class="active">Magazines</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Thiès, Sénégal</li>
+                    <li><i class="fa-solid fa-phone"></i> +221 77 268 23 34</li>
+                    <li><i class="fa-solid fa-envelope"></i> comscouthies@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Scouts de Thiès. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

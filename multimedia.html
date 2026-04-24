@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banque Multimédia - Scouts de Thiès</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme-kiosque">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo scout.jpeg" alt="Scouts de Thiès"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#accueil">Accueil</a></li>
+                    <li><a href="index.html#activites">Nos Activités</a></li>
+                    <li><a href="index.html#equipe">Notre Équipe</a></li>
+                    <li><a href="index.html#historique">Historique</a></li>
+                    <li><a href="index.html#memoire">Espace mémoire</a></li>
+                    <li><a href="multimedia.html" class="active">Banque Multimédia</a></li>
+                    <li><a href="kiosque.html">Magazines</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <!-- Multimedia Hero -->
+        <section class="kiosque-hero revealed">
+            <div class="kiosque-hero-overlay"></div>
+            <div class="container kiosque-hero-content">
+                <div class="kiosque-hero-text">
+                    <div class="section-badge red-pill">RESSOURCES</div>
+                    <h1>Banque Multimédia</h1>
+                    <p>Explorez nos tutoriels vidéos, chants traditionnels et archives sonores du scoutisme thiessois.
+                    </p>
+                </div>
+                <div class="kiosque-hero-mockup">
+                    <div class="hero-video-preview">
+                        <i class="fa-solid fa-circle-play fa-5x" style="color: var(--primary-red); opacity: 0.8;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multimedia Hub -->
+        <section class="container" style="padding: 60px 0;">
+            <!-- Tabs -->
+            <div class="kiosque-filters revealed" style="justify-content: center; margin-bottom: 50px;">
+                <button class="filter-btn active" onclick="showCat(this, 'videos')">Tutoriels Vidéos</button>
+                <button class="filter-btn" onclick="showCat(this, 'audios')">Chants & Audios</button>
+            </div>
+
+            <!-- Catégorie Vidéos -->
+            <div id="cat-videos" class="multimedia-category-content">
+                <div class="video-grid-premium">
+                    <!-- Vidéo 1 -->
+                    <div class="video-card-premium revealed">
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/OUIOeBSR1ws" 
+                                frameborder="0" 
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info-premium">
+                            <h3>A la rencontre de nos braves femmes</h3>
+                            <p>Reportage exclusif sur l'engagement des femmes dans le scoutisme thiessois.</p>
+                            <span class="video-tag">REPORTAGE</span>
+                        </div>
+                    </div>
+                    <!-- Vidéo 2 -->
+                    <div class="video-card-premium revealed">
+                        <div class="video-embed">
+                            <video controls
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                                <source src="assets/video/Les_Coulisses_Reportage_CI_CEP_La_ane_2024.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                            </video>
+                        </div>
+                        <div class="video-info-premium">
+                            <h3>Les Coulisses du CI CEP Lalane</h3>
+                            <p>Immersion dans les coulisses du camp d'été Lalane 2024.</p>
+                            <span class="video-tag">REPORTAGE</span>
+                        </div>
+                    </div>
+                    <!-- Vidéo 3 -->
+                    <div class="video-card-premium revealed">
+                        <div class="video-embed">
+                            <video controls
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                                <source src="assets/video/Les_Coulisses_Reportage_CI_CEP_La_ane_2024.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                            </video>
+                        </div>
+                        <div class="video-info-premium">
+                            <h3>Vie de Camp : Lalane 2024</h3>
+                            <p>Découvrez les activités quotidiennes et l'ambiance du camp.</p>
+                            <span class="video-tag">FORMATION</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cat-audios" class="multimedia-category-content" style="display: none;">
+                <div class="audio-list-premium">
+                    <div class="audio-track-premium revealed">
+                        <div class="track-info">
+                            <i class="fa-solid fa-music"></i>
+                            <div>
+                                <h4>Chant de promesse (Audio local)</h4>
+                                <p>Hymne officiel enregistré localement</p>
+                            </div>
+                        </div>
+                        <div class="track-player">
+                            <audio id="audio1" src="assets/audio/chant_scout.m4a"></audio>
+                            <button class="play-btn-circle" onclick="toggleAudio('audio1', this)"><i
+                                    class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <img src="assets/images/logo scout.jpeg" alt="Scouts de Thiès" class="footer-logo">
+                <p>Mouvement d'éducation et de citoyenneté, formant les jeunes de Thiès aux valeurs du scoutisme depuis
+                    1967.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html#accueil">Accueil</a></li>
+                    <li><a href="index.html#activites">Activités</a></li>
+                    <li><a href="index.html#equipe">Notre Équipe</a></li>
+                    <li><a href="multimedia.html" class="active">Banque Multimédia</a></li>
+                    <li><a href="kiosque.html">Magazines</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Thiès, Sénégal</li>
+                    <li><i class="fa-solid fa-phone"></i> +221 77 268 23 34</li>
+                    <li><i class="fa-solid fa-envelope"></i> comscouthies@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Scouts de Thiès. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showCat(btn, cat) {
+            document.querySelectorAll('.multimedia-category-content').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.filter-btn').forEach(el => el.classList.remove('active'));
+
+            document.getElementById('cat-' + cat).style.display = 'block';
+            btn.classList.add('active');
+        }
+
+        function toggleAudio(id, btn) {
+            const audio = document.getElementById(id);
+            const icon = btn.querySelector('i');
+
+            if (audio.paused) {
+                // Stop all other audios
+                document.querySelectorAll('audio').forEach(a => {
+                    a.pause();
+                    a.parentElement.querySelector('button i').className = 'fa-solid fa-play';
+                });
+                audio.play().catch(e => alert("Fichier audio non disponible pour le moment."));
+                icon.className = 'fa-solid fa-pause';
+            } else {
+                audio.pause();
+                icon.className = 'fa-solid fa-play';
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
