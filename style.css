@@ -21,6 +21,12 @@ body {
     overflow-x: hidden;
     background-color: var(--white);
     width: 100%;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .container {
@@ -159,22 +165,29 @@ body {
 @media (max-width: 768px) {
     .hero-wrapper {
         width: 100%;
+        padding: 0 10px;
     }
     .hero-card {
-        width: 95%;
-        padding: 20px;
-        bottom: -120px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        margin-top: -80px;
+        padding: 25px 20px;
         border-radius: 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
     .hero-card p {
-        font-size: 13px;
+        font-size: 14px;
     }
     .btn-primary {
-        padding: 10px 30px;
-        font-size: 20px;
+        padding: 12px 30px;
+        font-size: 22px;
+        width: 100%;
     }
     .hero {
-        padding-bottom: 140px;
+        padding-bottom: 40px;
     }
 }
 
@@ -2527,6 +2540,7 @@ body.dark-theme-kiosque .kiosque-hub::before {
     height: 0;
     overflow: hidden;
     background: #000;
+    max-width: 100%;
 }
 
 .video-embed iframe {
